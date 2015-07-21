@@ -92,9 +92,12 @@ echo 1. Select node version
 call :SelectNodeVersion
 
 echo 2. Install npm packages
-IF EXIST "package.json" (
-  call npm install --production -d
+IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
+  echo Calling !NPM_CMD! install --production
+  pushd "%DEPLOYMENT_TARGET%"
+  call :ExecuteCmd !NPM_CMD! install --production
   IF !ERRORLEVEL! NEQ 0 goto error
+  popd
 )
 
 echo 3. KuduSync
