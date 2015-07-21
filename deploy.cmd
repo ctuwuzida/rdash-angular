@@ -93,7 +93,7 @@ call :SelectNodeVersion
 
 echo 2. Install npm packages
 IF EXIST "package.json" (
-  call :ExecuteCmd !NPM_CMD! install --production
+  call npm install --production -d
   IF !ERRORLEVEL! NEQ 0 goto error
 )
 
