@@ -19,19 +19,6 @@ var paths = {
     bower_fonts: 'src/components/**/*.{ttf,woff,eof,svg}',
 };
 
-/**
- * flatten node modules
- */
-var exec = require('child_process').exec;
-
-gulp.task('flatten', function(cb) {
-    exec('flatten-packages', { maxBuffer: 1024 * 50000000 }, function(err, stdout, stderr) {
-        console.log(stdout);
-        console.log(stderr);
-        cb(err);
-    });
-});
-
 
 /**
  * Handle bower components from index
@@ -118,5 +105,5 @@ gulp.task('livereload', function() {
 /**
  * Gulp tasks
  */
-gulp.task('build', ['flatten','usemin', 'build-assets', 'build-custom']);
+gulp.task('build', ['usemin', 'build-assets', 'build-custom']);
 gulp.task('default', ['build', 'webserver', 'livereload', 'watch']);
