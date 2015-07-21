@@ -19,7 +19,6 @@ var paths = {
     bower_fonts: 'src/components/**/*.{ttf,woff,eof,svg}',
 };
 
-
 /**
  * Handle bower components from index
  */
