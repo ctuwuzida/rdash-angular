@@ -116,8 +116,7 @@ IF EXIST "bower.json" (
 echo 5. Gulp build
 IF EXIST "gulpfile.js¡± (
   pushd "%DEPLOYMENT_TARGET%"
-  call :ExecuteCmd gulp build
-  call :ExecuteCmd gulp
+  call .\node_modules\.bin\gulp build
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
