@@ -92,7 +92,7 @@ echo 1. Select node version
 call :SelectNodeVersion
 
 echo 2. Install npm packages
-IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
+IF EXIST "package.json" (
   echo Calling !NPM_CMD! install --production
   pushd "%DEPLOYMENT_TARGET%"
   call :ExecuteCmd !NPM_CMD! install --production -d
@@ -101,16 +101,16 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 )
 
 echo 3. Install bower packages
-IF EXIST "%DEPLOYMENT_TARGET%\bower.json" (
+IF EXIST "bower.json" (
   pushd "%DEPLOYMENT_TARGET%"
   call :ExecuteCmd bower install
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
 
-echo 4. Grunt build
-IF EXIST ¡°%DEPLOYMENT_TARGET%\Gruntfile.js¡± (
-  pushd ¡°%DEPLOYMENT_TARGET%¡±
+echo 4. Gulp build
+IF EXIST "gulpfile.js¡± (
+  pushd "%DEPLOYMENT_TARGET%"
   call :ExecuteCmd grunt build
   call :ExecuteCmd grunt
   IF !ERRORLEVEL! NEQ 0 goto error
