@@ -2,6 +2,7 @@
     "name": "rdash-angular",
     "version": "0.0.1",
     "author": "Elliot Hesp",
+    "private": "true",
     "contributors": [
         "Leonel Samayoa <leonel.e.samayoa@gmail.com> (http://gobliip.com)",
         "Ricardo Pascua <rdpascua@outlook.com>"
