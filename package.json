@@ -3,6 +3,10 @@
     "version": "0.0.1",
     "author": "Elliot Hesp",
     "private": "true",
+    "engines": {
+      "node": "0.12.3",
+      "npm": "2.9.1"
+    },
     "contributors": [
         "Leonel Samayoa <leonel.e.samayoa@gmail.com> (http://gobliip.com)",
         "Ricardo Pascua <rdpascua@outlook.com>"
