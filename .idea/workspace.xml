@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="728a5897-7151-4938-a6e0-f09365c46b91" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy.cmd" afterPath="$PROJECT_DIR$/deploy.cmd" />
+    <list default="true" id="728a5897-7151-4938-a6e0-f09365c46b91" name="Default" comment="fix kudu">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rdash-angular.iws" />
@@ -293,7 +292,13 @@
       <option name="project" value="LOCAL" />
       <updated>1437449425352</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fix kudu">
+      <created>1437450005230</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1437450005230</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
