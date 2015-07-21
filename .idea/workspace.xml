@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="728a5897-7151-4938-a6e0-f09365c46b91" name="Default" comment="fix kudu">
-      <change type="DELETED" beforePath="E:\Work\QuantStudio\rdash-angular\.idea\.deployment" afterPath="" />
-      <change type="DELETED" beforePath="E:\Work\QuantStudio\rdash-angular\.idea\deploy.cmd" afterPath="" />
+    <list default="true" id="728a5897-7151-4938-a6e0-f09365c46b91" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy.cmd" afterPath="$PROJECT_DIR$/deploy.cmd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -49,8 +47,8 @@
       <file leaf-file-name="deploy.cmd" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deploy.cmd">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56790125">
-              <caret line="97" column="22" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.5714286">
+              <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -271,7 +269,13 @@
       <option name="project" value="LOCAL" />
       <updated>1437448968337</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix kudu">
+      <created>1437449086762</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1437449086762</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -334,8 +338,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy.cmd">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56790125">
-          <caret line="97" column="22" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.5714286">
+          <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
           <folding />
         </state>
       </provider>
