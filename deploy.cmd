@@ -117,7 +117,6 @@ echo 5. Gulp build
 IF EXIST "gulpfile.js" (
   pushd "%DEPLOYMENT_TARGET%"
   call .\node_modules\.bin\gulp build --prod
-  call .\node_modules\.bin\gulp
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
