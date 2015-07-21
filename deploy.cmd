@@ -95,7 +95,7 @@ echo 2. Install npm packages
 IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   echo Calling !NPM_CMD! install --production
   pushd "%DEPLOYMENT_TARGET%"
-  call :ExecuteCmd !NPM_CMD! install --production
+  call :ExecuteCmd npm install --production
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
